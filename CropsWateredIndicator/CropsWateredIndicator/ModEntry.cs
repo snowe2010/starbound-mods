@@ -44,11 +44,11 @@ namespace CropsWateredIndicator
             var tint = this.Config.Tint;
 
             var location = Game1.currentLocation;
-            foreach (var tile in this.GetVisibleTiles())
+            var visibleTiles = this.GetVisibleTiles();
+            foreach (var tile in visibleTiles)
             {
                 HoeDirt dirt = GetDirt(location, tile);
                 if (dirt?.crop == null) continue;
-
                 var crop = dirt.crop;
                 var watered = dirt.state.Value == HoeDirt.watered;
 

@@ -6,5 +6,5 @@
    "UniqueID": "tylerthrailkill.cropswateredindicator",
    "EntryDll": "CropsWateredIndicator.dll",
    "MinimumApiVersion": "2.9",
-   "UpdateKeys": []
+   "UpdateKeys": [ "Nexus:3200" ]
 }
